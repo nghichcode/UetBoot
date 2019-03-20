@@ -1,0 +1,9 @@
+{
+  "appName": {
+    "message": "Uet Boot - NCVN",
+    "description": "App name"
+	},
+  "appDescription": {
+    "message": "Mini extension cho sinh viên UET!"
+	}
+}
