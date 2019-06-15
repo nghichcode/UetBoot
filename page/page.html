@@ -8,6 +8,9 @@
 
     <style type="text/css">
     .main{min-width: 300px; min-height: 300px; padding: 1px 8px;}
+    .form-inline input{display: inline!important;width: auto!important;}
+    .form-group label {margin: 0 2px;}
+    .mx-0{margin-top:0!important;margin-bottom:0!important;}
     </style>
 </head>
 <body>
@@ -15,7 +18,7 @@
     <div class="row">
     	<div class="main">
 
-    		<h3 class="text-center">Hello ! I'm Tin Cya!</h3><hr>
+    		<h4 class="text-center">Hello ! I'm Tin Cya!</h4><hr class="mx-0">
         
         <div class="form-group text-center">
           <h5 class="text-center">Courses UET rate</h5>
@@ -31,6 +34,19 @@
             </select>
             <button id="rate_eq" class="btn btn-info">Rate ==</button>
             <button id="rate_ge" class="btn btn-info">Rate >=</button>
+          </div>
+        </div><hr class="mx-0">
+
+        <div class="form-inline">
+          <h5 class="text-center">UET Wifi login</h5>
+          <div class="form-group">
+            <label for="acc">Account&nbsp:&nbsp</label><input type="text" class="form-control" id="acc">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label><input type="password" class="form-control" id="pwd">
+          </div>
+          <div class="form-group text-center">
+            <button id="login" class="btn btn-success">Login</button>
           </div>
         </div>
 

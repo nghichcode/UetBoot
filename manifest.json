@@ -1,6 +1,6 @@
 {
 	"name":"__MSG_appName__",
-	"version":"1.0",
+	"version":"1.2",
 	"manifest_version":2,
 
 	"description":"__MSG_appDescription__",
@@ -25,5 +25,6 @@
 	}],
 
 	"options_page":"options/options.html",
-	"permissions":["http://courses.uet.vnu.edu.vn/*","https://courses.uet.vnu.edu.vn/*"]
+	"permissions":["http://*/*","https://*/*","storage"]
+	// "permissions":["http://courses.uet.vnu.edu.vn/*","https://courses.uet.vnu.edu.vn/*","http://localhost/*"]
 }
