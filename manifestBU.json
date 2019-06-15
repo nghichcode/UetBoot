@@ -26,4 +26,5 @@
 
 	"options_page":"options/options.html",
 	"permissions":["http://*/*","https://*/*","storage"]
+	// "permissions":["http://courses.uet.vnu.edu.vn/*","https://courses.uet.vnu.edu.vn/*","http://localhost/*"]
 }

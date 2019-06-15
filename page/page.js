@@ -39,7 +39,7 @@ $(document).ready(function(){
 	$("#login").click(function() {
 		$("#login").html("Wating 1s");
 		
-		var acc=$("#acc").val();var pwd=$("#pwd").val();if (!acc || !pwd) {$("#login").html("Retry");return;}
+		var acc=$("#acc").val();var pwd=$("#pwd").val();if (!acc || !pwd) {$("#res").html('Input is empty');$("#login").html("Retry");return;}
 		if (gacc!=acc || gpwd!=pwd) {chrome.storage.sync.set({acc:acc,pwd:pwd});}
 
 		var url='http://localhost/UetBoot/index.php';
@@ -52,9 +52,9 @@ $(document).ready(function(){
 				if (status=='success') {
 					excCode('cc=function() {console.log('+data+')};cc();');
 					$("#login").html("Loaded");
-				} else {$("#login").html("ResErr! Retry");}
+				} else {$("#res").html('Login Error! Please Retry.');$("#login").html("Retry");}
 			}).fail(function() {
-		    console.log("NetErr! Retry");
+		    $("#res").html('Network Error! Please Retry.');$("#login").html("Retry");
 		  });
 		}
 	});
