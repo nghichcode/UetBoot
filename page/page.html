@@ -7,13 +7,36 @@
     <script src="../bootstrap/js/bootstrap.min.js"></script>
 
     <style type="text/css">
-    .main{min-width: 300px; min-height: 300px}
+    .main{min-width: 300px; min-height: 300px; padding: 1px 8px;}
     </style>
 </head>
 <body>
-	<div class="main">
-		<h3 style="text-align: center;">Hello ! I'm Tin Cya!</h3>
-	</div>
-    <script type="text/javascript" src="page.js"></script>
+  <div class="container">
+    <div class="row">
+    	<div class="main">
+
+    		<h3 class="text-center">Hello ! I'm Tin Cya!</h3><hr>
+        
+        <div class="form-group text-center">
+          <h5 class="text-center">Courses UET rate</h5>
+          <button id="rate_5" class="btn btn-info">Rate 5*</button>
+          <button id="rate_5r" class="btn btn-info">Rate 5* Random</button><br/>
+        </div>
+
+        <div class="form-inline">
+          <div class="form-group text-center">
+            <label for="sel1">Star :</label>
+            <select id="sel" class="form-inline" size="1" style="width: 40px;">
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            </select>
+            <button id="rate_eq" class="btn btn-info">Rate ==</button>
+            <button id="rate_ge" class="btn btn-info">Rate >=</button>
+          </div>
+        </div>
+
+    	</div>
+    </div>
+  </div>
+  <script type="text/javascript" src="page.js"></script>
 </body>
 </html>
